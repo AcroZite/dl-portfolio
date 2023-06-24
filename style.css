@@ -1,0 +1,137 @@
+html,
+body {
+  margin: 0px;
+  background-image: url(../SE/images/background3.jpg);
+  background-size: cover;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  letter-spacing: 1px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  font-size: 7px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+#down-arrow {
+  height: 50px;
+  transform: rotate(90deg);
+  opacity: 0%;
+}
+
+#intro.fadein,
+#top-bar.fadein,
+#down-arrow.fadein {
+  opacity: 100%;
+  transition: 1000ms;
+}
+
+#intro.translatedown,
+#down-arrow.translatedown {
+  translate: 0px 20px;
+}
+
+#top-bar {
+  height: 50px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0.34) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0.5px 0.5px 4px black;
+  opacity: 0%;
+  margin: 0px 0px 40px 0px;
+}
+
+#top-bar #logo {
+  height: 30px;
+  margin: 10px 15px;
+  opacity: 50%;
+}
+
+#intro {
+  display: flex;
+  margin: -20px 250px -20px 250px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+}
+
+#intro h1 {
+  font-size: 72px;
+  margin: 0px;
+}
+
+#intro p {
+  font-size: 20px;
+}
+
+#profile-pic {
+  height: 300px;
+  border: 8px solid black;
+  border-radius: 180px;
+  box-shadow: 0px 0px 17px 11px rgb(152 0 0 / 50%);
+  margin: 70px;
+}
+
+#nav-buttons {
+  display: flex;
+  list-style: none;
+  margin: 10px 15px;
+}
+
+#nav-buttons li:hover {
+  color: rgba(139, 22, 1, 0.781);
+  transition: 300ms;
+}
+
+#nav-buttons li {
+  margin: 0px 15px 0px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(58, 58, 57, 0.781);
+}
+
+#text-red {
+  color: rgb(139, 22, 1);
+}
+
+#social-logos {
+  display: flex;
+}
+
+#social-logos img {
+  height: 50px;
+  margin: 0px 15px 0px 0px;
+}
+
+#social-logos img:hover {
+  opacity: 0.6;
+  transition: 300ms;
+}
+
+#down-arrow:hover {
+  opacity: 0.6;
+  transition: 300ms;
+}
+
+#weather-widget {
+  background-color: grey;
+  height: 80px;
+  width: 400px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
