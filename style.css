@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0px;
@@ -21,6 +25,12 @@ footer {
   justify-content: center;
 }
 
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #down-arrow {
   height: 50px;
   transform: rotate(90deg);
@@ -29,13 +39,14 @@ footer {
 
 #intro.fadein,
 #top-bar.fadein,
-#down-arrow.fadein {
+#down-arrow.fadein,
+#weather-widget.fadein {
   opacity: 100%;
   transition: 1000ms;
 }
 
 #intro.translatedown,
-#down-arrow.translatedown {
+#weather-widget.translatedown {
   translate: 0px 20px;
 }
 
@@ -62,8 +73,8 @@ footer {
 
 #intro {
   display: flex;
-  margin: -20px 250px -20px 250px;
-  height: 600px;
+  margin: -20px 230px -20px 230px;
+  height: 400px;
   justify-content: center;
   align-items: center;
   opacity: 0%;
@@ -84,6 +95,11 @@ footer {
   border-radius: 180px;
   box-shadow: 0px 0px 17px 11px rgb(152 0 0 / 50%);
   margin: 70px;
+  transition: 300ms;
+}
+
+#profile-pic:hover {
+  height: 320px;
 }
 
 #nav-buttons {
@@ -94,7 +110,6 @@ footer {
 
 #nav-buttons li:hover {
   color: rgba(139, 22, 1, 0.781);
-  transition: 300ms;
 }
 
 #nav-buttons li {
@@ -102,6 +117,7 @@ footer {
   font-size: 20px;
   font-weight: bold;
   color: rgba(58, 58, 57, 0.781);
+  transition: 300ms;
 }
 
 #text-red {
@@ -128,10 +144,31 @@ footer {
 }
 
 #weather-widget {
-  background-color: grey;
-  height: 80px;
-  width: 400px;
+  background-color: rgb(204, 204, 204);
+  height: 100px;
+  width: 350px;
   display: block;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 30px 260px;
+  opacity: 0%;
+  box-shadow: 0px 0px 17px 5px rgb(152 0 0 / 50%);
+  border: 1px solid black;
+}
+
+#weather-widget h1 {
+  font-size: 30px;
+  color: rgb(139, 22, 1);
+  margin: 0px;
+}
+
+#weather-widget p {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+#temp {
+  color: rgb(139, 22, 1);
 }
