@@ -1,12 +1,10 @@
-async function getCurrentWeather() {
-  const response = await fetch(
-    "https://api.openweathermap.org/data/2.5/weather?lat=51.50&lon=-0.11&units=metric&appid=c3c058b2ad45476c232048fdf0fb5380"
-  );
+async function quoteOfTheDay() {
+  const response = await fetch("https://zenquotes.io/api/quotes/");
   const data = await response.json();
-  return data.weather[0].main;
+  return data[0].q;
 }
 
-const result = Promise.resolve(getCurrentWeather());
+const result = Promise.resolve(quoteOfTheDay());
 result.then((value) => {
   console.log(value);
 });

@@ -40,13 +40,15 @@ footer {
 #intro.fadein,
 #top-bar.fadein,
 #down-arrow.fadein,
-#weather-widget.fadein {
+#weather-widget.fadein,
+#quote-widget.fadein {
   opacity: 100%;
   transition: 1000ms;
 }
 
 #intro.translatedown,
-#weather-widget.translatedown {
+#weather-widget.translatedown,
+#quote-widget.translatedown {
   translate: 0px 20px;
 }
 
@@ -143,19 +145,22 @@ footer {
   transition: 300ms;
 }
 
+#widgets {
+  display: flex;
+  align-items: center;
+}
+
 #weather-widget {
   background-color: rgb(204, 204, 204);
   height: 100px;
   width: 420px;
-  display: block;
-  justify-content: center;
-  align-items: center;
   border-radius: 4px;
   padding: 10px;
-  margin: 30px 260px;
+  margin: 30px 0px 30px 260px;
   opacity: 0%;
   box-shadow: 0px 0px 17px 5px rgb(152 0 0 / 50%);
   border: 2px solid black;
+  flex-shrink: 0;
 }
 
 #weather-widget h1 {
@@ -174,7 +179,35 @@ footer {
   font-size: 26px;
 }
 
+#quote-of-the-day {
+  font-size: 18px;
+}
+
 #conditions {
   margin-left: 20px;
   float: right;
+}
+
+#quote-widget {
+  background-color: rgb(204, 204, 204);
+  height: 100px;
+  width: 420px;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 30px 100px;
+  opacity: 0%;
+  box-shadow: 0px 0px 17px 5px rgb(152 0 0 / 50%);
+  border: 2px solid black;
+  flex-shrink: 0;
+}
+
+#quote-widget h1 {
+  font-size: 30px;
+  color: rgb(139, 22, 1);
+  margin: 0px;
+}
+
+#quote-widget p {
+  font-size: 20px;
+  margin: 10px 0px;
 }
