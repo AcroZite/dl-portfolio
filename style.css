@@ -29,6 +29,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 70px;
 }
 
 #down-arrow {
@@ -75,7 +76,7 @@ footer {
 
 #intro {
   display: flex;
-  margin: -20px 230px -20px 230px;
+  margin: 0px 230px 0px 230px;
   height: 400px;
   justify-content: center;
   align-items: center;
@@ -89,6 +90,10 @@ footer {
 
 #intro p {
   font-size: 20px;
+}
+
+#about-me {
+  display: flex;
 }
 
 #profile-pic {
