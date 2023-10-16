@@ -30,9 +30,9 @@ async function getCurrentConditions() {
 
 //Quote API Call
 async function quoteOfTheDay() {
-  const response = await fetch("https://zenquotes.io/api/quotes/");
+  const response = await fetch("https://type.fit/api/quotes");
   const data = await response.json();
-  return data[0].q;
+  return data[0].text;
 }
 
 //add fadein classes to elements

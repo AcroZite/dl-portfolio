@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  outline: 1px solid black;
 }
 
 html,
@@ -112,7 +113,8 @@ footer {
 #nav-buttons {
   display: flex;
   list-style: none;
-  margin: 10px 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 #nav-buttons li:hover {
@@ -157,7 +159,7 @@ footer {
 
 #weather-widget {
   background-color: rgb(204, 204, 204);
-  height: 100px;
+  height: 130px;
   width: 420px;
   border-radius: 4px;
   padding: 10px;
@@ -195,7 +197,7 @@ footer {
 
 #quote-widget {
   background-color: rgb(204, 204, 204);
-  height: 100px;
+  height: 130px;
   width: 420px;
   border-radius: 4px;
   padding: 10px;
@@ -215,4 +217,7 @@ footer {
 #quote-widget p {
   font-size: 20px;
   margin: 10px 0px;
+}
+
+#toggle-light {
 }
